@@ -107,7 +107,7 @@ This project demonstrates scalable streaming analytics and resilient processing 
 
 ---
 
-### 🔹 Data Pipeline Automation with Kestra(https://github.com/SebM42/POC-Pipeline-Kestra)
+### 🔹 [Data Pipeline Automation with Kestra](https://github.com/SebM42/POC-Pipeline-Kestra)
 
 Designed an automated monthly data pipeline orchestrated with Kestra.
 

@@ -1,4 +1,4 @@
-# Hi, I'm Sebastien Moreau 👋  
+# Hi, I'm Seb M 👋  
 Junior Data Engineer | Streaming & Lakehouse Architectures | Data Quality & Reliability
 
 ---

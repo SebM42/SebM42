@@ -1,27 +1,16 @@
-<!-- ═══════════════════════════════════════════════════════════ -->
-<!--                  SÉBASTIEN MOREAU — README                -->
-<!-- ═══════════════════════════════════════════════════════════ -->
-
 <div align="center">
 
-```
-┌─────────────────────────────────────────────────────────────┐
-│                                                             │
-│              SÉBASTIEN MOREAU · DATA ENGINEER               │
-│                                                             │
-│   Pipelines · Lakehouse · CDC · Data Quality · Lineage      │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
+# SÉBASTIEN MOREAU · DATA ENGINEER
+
+**Pipelines · Lakehouse · CDC · Data Quality · Lineage**
 
 [![Email](https://img.shields.io/badge/sebastien.t.moreau@gmail.com-0d1117?style=flat-square&logo=gmail&logoColor=58a6ff&labelColor=0d1117)](mailto:sebastien.t.moreau@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0d1117?style=flat-square&logo=linkedin&logoColor=58a6ff&labelColor=0d1117)](https://www.linkedin.com/in/sebastien-moreau-data/)
 
 </div>
 
 ---
 
-## `$ whoami`
+## About
 
 Data Engineer focused on **production-grade pipelines** — from raw ingestion to business-ready outputs.
 
@@ -34,7 +23,7 @@ I translate audit and compliance requirements into **reliable, shippable workflo
 
 ---
 
-## `$ ls ./stack`
+## Stack
 
 <div align="center">
 
@@ -73,7 +62,7 @@ I translate audit and compliance requirements into **reliable, shippable workflo
 
 ---
 
-## `$ cat ./projects`
+## Projects
 
 ### ▸ [End-to-End Streaming Lakehouse — HR & Sport Activity](https://github.com/SebM42/POC-Employees-sport-event-Streaming)
 `Python` `Kafka/Redpanda` `Debezium` `Delta Lake` `Great Expectations` `Prometheus` `OSMNX`
@@ -118,7 +107,7 @@ Relational-to-document schema migration with a configurable transformation engin
 
 ---
 
-## `$ cat ./volunteer`
+## Volunteer
 
 | Project | Org | Role |
 |---|---|---|
@@ -129,7 +118,7 @@ Relational-to-document schema migration with a configurable transformation engin
 
 ---
 
-## `$ cat ./currently_learning`
+## Currently learning
 
 ```yaml
 dbt:        modular transformations, testing, documentation
@@ -137,5 +126,3 @@ Airflow:    advanced orchestration patterns
 Databricks: scalable Spark-based data platforms
 Focus:      observability, CI/CD, production reliability
 ```
-
-

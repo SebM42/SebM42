@@ -15,7 +15,6 @@
 ```
 
 [![Email](https://img.shields.io/badge/sebastien.t.moreau@gmail.com-0d1117?style=flat-square&logo=gmail&logoColor=58a6ff&labelColor=0d1117)](mailto:sebastien.t.moreau@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0d1117?style=flat-square&logo=linkedin&logoColor=58a6ff&labelColor=0d1117)](https://www.linkedin.com/in/sebastien-moreau-data/)
 
 </div>
 

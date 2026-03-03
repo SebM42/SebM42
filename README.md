@@ -1,156 +1,141 @@
-# Hi, I'm Seb M 👋  
-Junior Data Engineer | Streaming & Lakehouse Architectures | Data Quality & Reliability
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!--                  SÉBASTIEN MOREAU — README                -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+
+<div align="center">
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                                                             │
+│              SÉBASTIEN MOREAU · DATA ENGINEER               │
+│                                                             │
+│   Pipelines · Lakehouse · CDC · Data Quality · Lineage      │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+[![Email](https://img.shields.io/badge/sebastien.t.moreau@gmail.com-0d1117?style=flat-square&logo=gmail&logoColor=58a6ff&labelColor=0d1117)](mailto:sebastien.t.moreau@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0d1117?style=flat-square&logo=linkedin&logoColor=58a6ff&labelColor=0d1117)](https://www.linkedin.com/in/sebastien-moreau-data/)
+
+</div>
 
 ---
 
-## 👨‍💻 About Me  
+## `$ whoami`
 
-I’m a Junior Data Engineer passionate about building reliable and scalable data systems.  
-Through hands-on academic and volunteer projects, I’ve designed and implemented end-to-end batch and streaming pipelines — from data ingestion and CDC to transformation, validation, and analytics-ready outputs.  
-I enjoy working on event-driven architectures, lakehouse systems (Bronze/Silver/Gold), and production-like environments where data quality, reliability, and observability matter.  
-I’m currently seeking a Data Engineer position — in France or internationally — where I can contribute to modern data platforms while continuing to grow in distributed systems and large-scale data processing.  
+Data Engineer focused on **production-grade pipelines** — from raw ingestion to business-ready outputs.
 
----
+I build systems where data quality, traceability, and compliance are first-class concerns — not afterthoughts.  
+My work spans batch and event-driven architectures, CDC-based ingestion, lakehouse modeling, entity resolution, and end-to-end lineage.  
+I translate audit and compliance requirements into **reliable, shippable workflows** — with full ownership across the stack.
 
-## 🛠 Technical Skills  
-
-**Programming & Querying**
-- Python (data processing, APIs, streaming consumers, validation scripts)
-- SQL (data modeling, transformations, analytics queries)
-
-**Data Engineering**
-- Batch & Streaming Pipelines
-- Apache Spark (Structured Streaming)
-- Kafka / Redpanda
-- CDC with Debezium
-- Data Lakehouse architecture (Bronze / Silver / Gold)
-- ETL / ELT design
-- Data modeling (relational & dimensional concepts)
-
-**Orchestration & Automation**
-- Kestra
-- Workflow automation with Dockerized services
-
-**Databases & Storage**
-- PostgreSQL
-- MongoDB (Replica Set configuration & replication, Sharding)
-- DuckDB
-- Delta Lake
-- FAISS (vector indexing)
-
-**Data Quality & Reliability**
-- Great Expectations
-- Integrity validation & schema comparison
-- Replication testing & performance benchmarking
-- Checkpointing & fault tolerance (Spark)
-
-**Cloud & Infrastructure**
-- AWS
-- Docker & Docker Compose
-- Environment-based configuration & secrets management
-
-**APIs & Backend**
-- FastAPI
-- REST API ingestion
-- Slack API integration
-
-**Observability & Monitoring**
-- Prometheus (basic metrics exposure)
-- Logging strategies in distributed pipelines
+> Master's equivalent in Data Engineering — OpenClassrooms (2026).  
+> Open to **Data Engineer positions** — France or internationally.
 
 ---
 
-## 📦 Selected Projects  
+## `$ ls ./stack`
 
-### 🔹 [Real-Time HR & Sport Streaming Lakehouse](https://github.com/SebM42/POC-Employees-sport-event-Streaming)  
+<div align="center">
 
-Designed and implemented an end-to-end real-time streaming pipeline simulating HR and sport activity tracking.  
+**— Core —**
 
-- CDC from PostgreSQL using Debezium
-- Event streaming with Redpanda (Kafka API)
-- Python micro-batch stream processing
-- Lakehouse architecture with Delta Lake (Bronze → Silver → Gold)
-- Data quality validation using Great Expectations
-- Real-time Slack notifications
-- Metrics exposure with Prometheus
+![Python](https://img.shields.io/badge/Python-0d1117?style=flat-square&logo=python&logoColor=58a6ff)
+![SQL](https://img.shields.io/badge/SQL-0d1117?style=flat-square&logo=postgresql&logoColor=58a6ff)
 
-This project demonstrates event-driven architecture, business rule processing, SCD Type 2 historization, and data reliability in a modern streaming stack.  
+**— Ingestion & Streaming —**
 
----
+![Kafka](https://img.shields.io/badge/Kafka%20%2F%20Redpanda-0d1117?style=flat-square&logo=apachekafka&logoColor=58a6ff)
+![Debezium](https://img.shields.io/badge/Debezium%20CDC-0d1117?style=flat-square&logo=apachekafka&logoColor=f0883e)
+![Airbyte](https://img.shields.io/badge/Airbyte-0d1117?style=flat-square&logo=airbyte&logoColor=58a6ff)
+![PySpark](https://img.shields.io/badge/PySpark-0d1117?style=flat-square&logo=apachespark&logoColor=f0883e)
 
-### 🔹 [MongoDB Replica Set with S3 Migration & Integrity Validation](https://github.com/SebM42/POC-MongoDB-Migration-with-replicaset)  
+**— Storage & Lakehouse —**
 
-Built a production-like MongoDB architecture fully containerized with automated initialization.  
+![Delta Lake](https://img.shields.io/badge/Delta%20Lake-0d1117?style=flat-square&logo=databricks&logoColor=f0883e)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-0d1117?style=flat-square&logo=postgresql&logoColor=58a6ff)
+![MongoDB](https://img.shields.io/badge/MongoDB-0d1117?style=flat-square&logo=mongodb&logoColor=3fb950)
+![DuckDB](https://img.shields.io/badge/DuckDB-0d1117?style=flat-square&logo=duckdb&logoColor=f0883e)
+![AWS S3](https://img.shields.io/badge/AWS%20S3-0d1117?style=flat-square&logo=amazons3&logoColor=f0883e)
 
-- Automated Replica Set deployment (1 primary, 2 secondaries)
-- Secure internal authentication via keyFile
-- JSON ingestion from AWS S3 using boto3
-- Data normalization and datetime conversion
-- Post-migration integrity checks (schema, types, duplicates)
-- Replication consistency validation
-- Query performance benchmarking
+**— Orchestration & Infra —**
 
-This project focuses on data integrity, distributed database configuration, and operational reliability.  
+![Kestra](https://img.shields.io/badge/Kestra-0d1117?style=flat-square&logo=kestra&logoColor=58a6ff)
+![Airflow](https://img.shields.io/badge/Airflow-0d1117?style=flat-square&logo=apacheairflow&logoColor=58a6ff)
+![Docker](https://img.shields.io/badge/Docker-0d1117?style=flat-square&logo=docker&logoColor=58a6ff)
 
----
+**— Quality & Observability —**
 
-### 🔹 [Spark Structured Streaming – Client Ticket System](https://github.com/SebM42/POC-Client-Ticket-Streaming)  
+![Great Expectations](https://img.shields.io/badge/Great%20Expectations-0d1117?style=flat-square&logo=python&logoColor=3fb950)
+![Prometheus](https://img.shields.io/badge/Prometheus-0d1117?style=flat-square&logo=prometheus&logoColor=f0883e)
 
-Developed a real-time ticket streaming system using Spark Structured Streaming.  
-
-- Synthetic ticket generation via Python producer
-- Real-time ingestion into Redpanda (Kafka API)
-- Dynamic Spark streaming consumer
-- 1-second window aggregations
-- Checkpointing for fault tolerance
-- JSON persistence of aggregated outputs
-
-This project demonstrates scalable streaming analytics and resilient processing pipelines.  
+</div>
 
 ---
 
-### 🔹 [Data Pipeline Automation with Kestra](https://github.com/SebM42/POC-Pipeline-Kestra)  
+## `$ cat ./projects`
 
-Designed an automated monthly data pipeline orchestrated with Kestra.  
+### ▸ [End-to-End Streaming Lakehouse — HR & Sport Activity](https://github.com/SebM42/POC-Employees-sport-event-Streaming)
+`Python` `Kafka/Redpanda` `Debezium` `Delta Lake` `Great Expectations` `Prometheus` `OSMNX`
 
-- Excel → Parquet conversion
-- SQL transformations with DuckDB
-- Data cleaning & deduplication
-- Automated data quality assertions
-- Revenue analytics & anomaly detection (z-score)
-- Parallel execution branches
+Production-grade event-driven pipeline: CDC from PostgreSQL via Debezium, Python micro-batch consumer (100ms poll), geospatial distance computation via OSMNX/BAN API. Delta Lake lakehouse (Bronze → Silver → Gold) with SCD Type 2 historization for full auditability. Data quality gates at every layer transition. Dead letter table for failed batches. Metrics exposed via Prometheus.
 
-This project highlights orchestration, reproducibility, and analytics-ready data production.  
-
-## 🤝 Volunteer Data Projects  
-
-### [Trawl Watch – BLOOM Association](https://github.com/dataforgoodfr/12_bloom)  
-
-Contributed to the design and implementation of a data platform tracking industrial fishing vessel activity across European waters.  
-
-- Designed transformation architecture and data models for multi-stage processing
-- Defined intermediate and analytical data structures across the pipeline
-- Implemented business logic to transform raw vessel positions into structured excursion-level datasets
-- Collaborated with frontend teams on user journey definition and UX design, translating user needs into data models and API-ready outputs
-
-### [Dans Mon Eau – Public Health Data Platform](https://github.com/dataforgoodfr/13_pollution_eau)  
-
-Contributed to a nationwide public data platform exposing drinking water quality metrics across France.  
-
-- Processed large open government datasets from public health authorities
-- Performed exploratory data analysis to disentangle merged datasets and reconstruct original data structures
-- Cleaned, normalized, and structured raw datasets for analytical and public-facing use
-- Collaborated within a cross-functional team of 40+ volunteers (data engineers, analysts, developers, designers)
-
-## 🌱 Currently Improving  
-
-- Analytics engineering with dbt (modular transformations, testing, documentation)  
-- Advanced orchestration patterns with Apache Airflow  
-- Databricks ecosystem for scalable Spark-based data platforms  
-- Production-grade data engineering practices (observability, reliability, CI/CD)  
+> **Key decisions:** CDC over polling — fact table capture is natural fit, state table monitored on 2 columns only · quarantine logic for implausible records · PII excluded from the lakehouse · SCD Type 2 scoped to auditability, not retroactive rule changes · at-least-once delivery with explicit crash recovery per stage.
 
 ---
 
-## 📫 Let's Connect  
+### ▸ [MongoDB Replica Set — S3 Migration & Integrity Validation](https://github.com/SebM42/POC-MongoDB-Migration-with-replicaset)
+`Python` `MongoDB` `boto3` `AWS S3`
 
-- Email: sebastien.t.moreau@gmail.com
+Containerized MongoDB replica set with keyFile intra-cluster authentication. Automated S3 ingestion with JSON parsing and normalization. Post-migration integrity validation: schema checks, type enforcement, duplicate detection, replication consistency across all nodes. Fully automated bootstrap — zero manual intervention.
+
+> **Key decisions:** 3 nodes across independent datacenters — simultaneous failure of 2 nodes in separate datacenters is statistically negligible, all 3 is not an operational scenario · odd node count reaches quorum without an arbiter · idempotent bootstrap skips init on subsequent restarts.
+
+---
+
+### ▸ [Orchestrated Monthly Pipeline — Analytics & Reporting](https://github.com/SebM42/POC-Pipeline-Kestra)
+`Python` `Kestra` `DuckDB`
+
+Kestra-orchestrated monthly pipeline: ingestion, SQL transformations, deduplication, per-step data quality assertions, parallel report generation (revenue analytics + z-score anomaly detection). CSV → Parquet upfront for columnar query performance with DuckDB. Custom Docker image to resolve C-level dependency constraints in Kestra's Python task type.
+
+> **Key decisions:** per-step integrity checks rather than end-to-end only · partial failure isolation between reporting branches · Parquet chosen defensively given unknown volume baseline.
+
+---
+
+### ▸ [Conversational AI System — RAG Pipeline & Architecture Design](https://github.com/SebM42/Conversational-AI-System-RAG-Pipeline-Production-Architecture-Design)
+`Python` `LangChain` `FAISS` `Mistral AI` `FastAPI`
+
+Two-service RAG system over French public events data: ingestion pipeline (OpenDataSoft → mistral-embed → FAISS FlatL2 index) and a chatbot API with a two-stage LLM pipeline (filter extraction → response generation). Ingestion and querying fully decoupled as separate containers. Accompanied by a full production architecture study (POC → MVP) including cloud design, cost modeling, and component trade-off analysis.
+
+> **Key decisions:** two-stage LLM pipeline designed from the start to separate filter extraction from generation · single Mistral ecosystem to guarantee embedding space consistency · FAISS FlatL2 for exact search at POC scale, with explicit migration path to Pinecone documented for production.
+
+---
+
+### ▸ MongoDB Schema Migration — Structured → Document + Sharding *(coming soon)*
+`Python` `MongoDB`
+
+Relational-to-document schema migration with a configurable transformation engine — schema mapping defined as data config rather than hardcoded logic. Sharding strategy designed around the business access pattern.
+
+---
+
+## `$ cat ./volunteer`
+
+| Project | Org | Role |
+|---|---|---|
+| [Trawl Watch](https://github.com/dataforgoodfr/12_bloom) | BLOOM Association | Transformation architecture · Data modeling · Business logic implementation |
+| [Dans Mon Eau](https://github.com/dataforgoodfr/13_pollution_eau) | Public Health Data Platform | EDA on opaque merged datasets · Normalization · Cross-functional team (40+ volunteers) |
+
+> Dans Mon Eau is in production and publicly accessible. Trawl Watch pre-production repository is publicly available on GitHub.
+
+---
+
+## `$ cat ./currently_learning`
+
+```yaml
+dbt:        modular transformations, testing, documentation
+Airflow:    advanced orchestration patterns
+Databricks: scalable Spark-based data platforms
+Focus:      observability, CI/CD, production reliability
+```
+
+

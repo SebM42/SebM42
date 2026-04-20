@@ -19,7 +19,7 @@ My work spans batch and event-driven architectures, CDC-based ingestion, lakehou
 I translate audit and compliance requirements into **reliable, shippable workflows** — with full ownership across the stack.
 
 > Master's equivalent in Data Engineering — OpenClassrooms (2026).  
-> Open to **Data Engineer positions** — France or internationally.
+> Open to relocation — Belgium, Netherlands, Sweden, Denmark.
 
 ---
 
@@ -42,6 +42,8 @@ I translate audit and compliance requirements into **reliable, shippable workflo
 **— Storage & Lakehouse —**
 
 ![Delta Lake](https://img.shields.io/badge/Delta%20Lake-0d1117?style=flat-square&logo=databricks&logoColor=f0883e)
+![Databricks](https://img.shields.io/badge/Databricks-0d1117?style=flat-square&logo=databricks&logoColor=f0883e)
+![dbt](https://img.shields.io/badge/dbt-0d1117?style=flat-square&logo=dbt&logoColor=f0883e)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-0d1117?style=flat-square&logo=postgresql&logoColor=58a6ff)
 ![MongoDB](https://img.shields.io/badge/MongoDB-0d1117?style=flat-square&logo=mongodb&logoColor=3fb950)
 ![DuckDB](https://img.shields.io/badge/DuckDB-0d1117?style=flat-square&logo=duckdb&logoColor=f0883e)
@@ -49,6 +51,8 @@ I translate audit and compliance requirements into **reliable, shippable workflo
 
 **— Orchestration & Infra —**
 
+![Databricks Workflows](https://img.shields.io/badge/Databricks%20Workflows-0d1117?style=flat-square&logo=databricks&logoColor=f0883e)
+![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-0d1117?style=flat-square&logo=githubactions&logoColor=58a6ff)
 ![Kestra](https://img.shields.io/badge/Kestra-0d1117?style=flat-square&logo=kestra&logoColor=58a6ff)
 ![Airflow](https://img.shields.io/badge/Airflow-0d1117?style=flat-square&logo=apacheairflow&logoColor=58a6ff)
 ![Docker](https://img.shields.io/badge/Docker-0d1117?style=flat-square&logo=docker&logoColor=58a6ff)
@@ -63,6 +67,15 @@ I translate audit and compliance requirements into **reliable, shippable workflo
 ---
 
 ## Projects
+
+### ▸ [Economic Activity Monitor — End-to-End Lakehouse Pipeline (SIRENE/INSEE)](https://github.com/SebM42/insee-sirene-monitor)
+`Python` `Databricks` `Delta Lake` `dbt` `Databricks Workflows` `GitHub Actions` `Unity Catalog`
+
+Production-grade monthly pipeline on 42M+ French business establishments (INSEE SIRENE). Configurable geographic scope. Medallion architecture (Bronze → Silver → Gold): Bronze as a transit-only dead letter queue, Silver as a SCD Type 2 historical source of truth, Gold as dbt-powered business aggregations. Single atomic Delta MERGE for Silver writes — no rollback needed. Circuit breaker pattern for transformation failure isolation, reset via GitHub Actions manual trigger without direct Databricks access. Gold failures trigger automatic rollback via Delta time travel. Full ADR documentation (DECISIONS.md). Deployable on any Databricks workspace in minutes.
+
+> **Key decisions:** significance filter on tracked columns — INSEE updates `dateDernierTraitementEtablissement` for both business and technical changes, filtering prevents spurious SCD2 periods · single atomic MERGE eliminates partial write risk without rollback logic · Bronze as implicit DLQ — batch retained until Silver transformation confirmed successful · two source files at initialization (stock + historical) to reconstruct full SCD2 history from day one · circuit breaker reset decoupled from Databricks access — operator only needs Git.
+
+---
 
 ### ▸ [End-to-End Streaming Lakehouse — HR & Sport Activity](https://github.com/SebM42/POC-Employees-sport-event-Streaming)
 `Python` `Kafka/Redpanda` `Debezium` `Delta Lake` `Great Expectations` `Prometheus` `OSMNX`
@@ -94,7 +107,7 @@ Kestra-orchestrated monthly pipeline: ingestion, SQL transformations, deduplicat
 ### ▸ [Conversational AI System — RAG Pipeline & Architecture Design](https://github.com/SebM42/Conversational-AI-System-RAG-Pipeline-Production-Architecture-Design)
 `Python` `LangChain` `FAISS` `Mistral AI` `FastAPI`
 
-Two-service RAG system over French public events data: ingestion pipeline (OpenDataSoft → mistral-embed → FAISS FlatL2 index) and a chatbot API with a two-stage LLM pipeline (filter extraction → response generation). Ingestion and querying fully decoupled as separate containers. Accompanied by a full production architecture study (POC → MVP) including cloud design, cost modeling, and component trade-off analysis.
+Full production architecture study (POC → MVP): cloud design, cost modeling, and systematic component trade-off analysis across scalability, cost efficiency, fault tolerance, access control, and observability constraints. Two-service RAG system as POC implementation.
 
 > **Key decisions:** two-stage LLM pipeline designed from the start to separate filter extraction from generation · single Mistral ecosystem to guarantee embedding space consistency · FAISS FlatL2 for exact search at POC scale, with explicit migration path to Pinecone documented for production.
 
@@ -115,14 +128,3 @@ Relational-to-document schema migration with a configurable transformation engin
 | [Dans Mon Eau](https://github.com/dataforgoodfr/13_pollution_eau) | Public Health Data Platform | EDA on opaque merged datasets · Normalization · Cross-functional team (40+ volunteers) |
 
 > Dans Mon Eau is in production and publicly accessible. Trawl Watch pre-production repository is publicly available on GitHub.
-
----
-
-## Currently learning
-
-```yaml
-dbt:        modular transformations, testing, documentation
-Airflow:    advanced orchestration patterns
-Databricks: scalable Spark-based data platforms
-Focus:      observability, CI/CD, production reliability
-```
